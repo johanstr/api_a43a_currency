@@ -1,30 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Title Page</title>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Client</title>
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
-        <h1 class="text-center">API Les 02 - Currency</h1>
+</head>
 
+<body>
+    <h1 class="text-center">API Les - Client App</h1>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="valuta">Valuta</label>
+                    <input class="form-control" type="text" id="valuta" />
+                </div>
+                <div class="form-group">
+                    <label for="amount">Hoeveelheid</label>
+                    <input class="form-control" type="number" id="amount" />
+                </div>
+                <hr />
+                <button id="button1" class="btn btn-primary">Bereken de waarde</button>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center">Waarde in Euro's</h1>
+                <h3 style="color: red;" id="value-in-euros"></h3>
+            </div>
+        </div>
+        <hr style="border-color: lightblue;" />
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="from-valuta">Valuta</label>
+                    <input class="form-control" type="text" id="from-valuta" />
+                </div>
+                <div class="form-group">
+                    <label for="amount">Hoeveelheid</label>
+                    <input class="form-control" type="number" id="amount" />
+                </div>
+                <div class="form-group">
+                    <label for="to-valuta">Valuta</label>
+                    <input class="form-control" type="text" id="to-valuta" />
+                </div>
+                <hr />
+                <button id="button2" class="btn btn-primary">Bereken de waarde</button>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center">Waarde in ....</h1>
+                <h3 style="color: red;" id="value-in-currency"></h3>
+            </div>
+        </div>
+    </div>
 
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
 </html>

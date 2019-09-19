@@ -100,4 +100,6 @@ function getCalculatedValueInEuros($cur, $amount)
 }
 
 function getCalculatedValue($cur, $amount, $tocur)
-{ }
+{ 
+    
+}
